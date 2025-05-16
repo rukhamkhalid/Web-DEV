@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-template-rows:'Header header header header'
+                              'sidebar main main main'
+                              'sidebar box1 box2 box3'
+                              'footer footer footer footer';
+            height: 100vh;
+        }.item{
+            background-color: antiquewhite;
+        }
+        .item1{
+            grid-area: header;
+            background-color: aquamarine;
+        }.item2{
+            grid-area: sidebar;
+            background-color: blueviolet;
+        }.item3{
+            grid-area: main;
+            background-color: brown;
+        }.item4{
+            grid-area: box1;
+            background-color: darkgreen;
+        }.item4{
+            grid-area: box2;
+            background-color: darkmagenta;
+        }.item5{
+            grid-area: box3;
+            background-color: darkslategray;
+        }.item6{
+            grid-area:box4;
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+        <div class="item5">item5</div>
+        <div class="item6">item6</div>
+        <div class="item7">item7</div>
+    
+      </div>
+</body>
+</html>
